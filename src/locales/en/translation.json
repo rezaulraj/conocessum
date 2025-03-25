@@ -1,0 +1,60 @@
+{
+  "menu": {
+    "home": "Home",
+    "services": "Services",
+    "candidates": "For Candidates",
+    "clients": "For Clients",
+    "career": "Career Advice",
+    "about": "About Us",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "banner": {
+    "cookies": "These web sites use cookies to ensure better user experience and functionality More about cookies read here",
+    "button": "I agree"
+  },
+  "herotext": {
+    "headtext": "EMPLOYMENT AGENCY",
+    "subtext": "In co-operation with well established agencies,employers and responsible authorities worldwide we provide all kinds of services associated with employment and acquiring relevant documents and visas. Furthermore, we provide education and training for potential candidates in accordance with demands and needs of particular countries and employers."
+  },
+  "logotext": {
+    "heading1": "Find a Job",
+    "heading2": "Find an employee",
+    "heading3": "Tax refund",
+    "heading4": "Follow our carreers advices",
+
+    "subheading1": "Apply for open position or send us your CV for future possibilities.",
+    "subheading2": "Entrust complex process of selection and recruitment to professionals.",
+    "subheading3": "Seek for free advice and preliminary calculation and apply for tax refund.",
+    "subheading4": "Keep pace with trends on labour market.",
+
+    "button": "Learn More"
+  },
+  "login": {
+    "logintext": "Login",
+    "remember": "Remember me",
+    "forget": "Forgot password?"
+  },
+  "footer": {
+    "heading": "Concessum d.o.o.",
+    "location": ".o.Prilaz Gjure Deželića 71 10000 Zagreb , Croatia",
+    "tphone": "+385 1 4668 604",
+    "mobile": "+385 1 617 1548",
+    "email1": "info@concessum.com",
+    "email2": "povratporeza@concessum.com",
+
+    "contact": "Contact us",
+    "inputname": "Your name and surename",
+    "inputphone": "Phone number",
+    "inputeamil": "Your email",
+    "inputmesage": "Message",
+    "condition": "I accept Terms and conditions",
+    "sendBtn": "Send",
+    "share": "Share",
+
+    "develop": "Website development",
+    "trem": "Terms of use",
+    "sitemap": "Sitemap",
+    "copyright": "© 2015 | All Rights reserved. Concessum.com"
+  }
+}

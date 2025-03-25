@@ -1,0 +1,64 @@
+{
+  "menu": {
+    "home": "Početna",
+    "services": "Usluge",
+    "candidates": "Za kandidate",
+    "clients": "Za klijente",
+    "career": "Savjeti za karijeru",
+    "about": "O nama",
+    "faq": "FAQ",
+    "contact": "Kontakt"
+  },
+  "banner": {
+    "cookies": "Ove Internetske stranice koriste kolačiće kako bi osigurale bolje korisničko iskustvo i funkcionalnost stranica. Više o kolačićima pročitajte ovdje.",
+    "button": "Slažem se"
+  },
+  "herotext": {
+    "headtext": "AGENCIJA ZA ZAPOŠLJAVANJE",
+    "subtext": "U suradnji s provjerenim agencijama, poslodavcima i nadležnim državnim tijelima diljem svijeta pružamo sve vrste usluga vezanih za zapošljavanje i ishođenje svih vrsta viza i dokumenta. Organiziramo obuku i edukaciju za potencijalne klijente u skladu sa zahtjevima i potrebama pojedinih zemalja i poslodavaca."
+  },
+  "logotext": {
+    "heading1": "Pronađite posao",
+    "heading2": "Pronađite zaposlenika",
+    "heading3": "Ostvarite povrat poreza",
+    "heading4": "Pročitajte naše savjete",
+
+    "subheading1": "Aplicirajte za neku od aktualno otvorenih pozicija ili pošaljite CV za buduće prilike.",
+    "subheading2": "Provjerite proces selekcije i novačenja kandidata profesionalcima.",
+    "subheading3": "Potražite besplatne savjete i preliminarnu kalkulaciju te aplicirajte za povrat poreza.",
+    "subheading4": "Držite korak sa trendovima na tržištu rada.",
+
+    "button": "Saznajte više"
+  },
+  "login": {
+    "logintext": "Prijava",
+    "remember": "Zapamti me",
+    "forget": "Zaboravili ste zaporku?",
+    "inputemail": "Vaše ime i prezime",
+    "password": "Zaporka",
+    "loginbtn": "Prijava"
+  },
+  "footer": {
+    "heading": "Concessum d.o.o.",
+    "subHeading": "Concessum d.o.o. za posredovanje pri zapošljavanju i privremeno zapošljavanje | Concessum poslovno savjetovanje d.o.o. za usluge",
+    "location": "Ilica191c 10000 Zagreb , Hrvatska",
+    "tphone": "+385 1 4668 604",
+    "mobile": "+385 1 617 1548",
+    "email1": "info@concessum.com",
+    "email2": "povratporeza@concessum.com",
+
+    "contact": "Kontaktirajte nas",
+    "inputname": "Vaše ime i prezime",
+    "inputphone": "Telefon",
+    "inputeamil": "Vaš email",
+    "inputmesage": "Poruka",
+    "condition": "Prihvaćam Prava i uvjete korištenja",
+    "sendBtn": "Pošalji",
+    "share": "Podijeli",
+
+    "develop": "Izrada web stranica",
+    "trem": "Uvjeti korištenja",
+    "sitemap": "Sitemap",
+    "copyright": "© 2015 | Sva prava pridržana. Concessum.com"
+  }
+}
