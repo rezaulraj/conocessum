@@ -32,8 +32,11 @@
   },
   "login": {
     "logintext": "Login",
+    "inputemail": "Username or email",
+    "password": "password",
     "remember": "Remember me",
-    "forget": "Forgot password?"
+    "forget": "Forgot Your password?",
+    "loginbtn": "Login"
   },
   "footer": {
     "heading": "Concessum d.o.o.",
