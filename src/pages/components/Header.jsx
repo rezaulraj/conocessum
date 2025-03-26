@@ -11,13 +11,13 @@ import {
 import { FaTimes } from "react-icons/fa";
 
 import logo from "../../assets/logo.png";
-import { Link,useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const { t, i18n } = useTranslation();
-
+  const location = useLocation();
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -31,9 +31,9 @@ const Header = () => {
     { title: t("menu.services"), path: "/services" },
     { title: t("menu.candidates"), path: "/candidates" },
     { title: t("menu.clients"), path: "/clients" },
-    { title: t("menu.career"), path: "/career" },
-    { title: t("menu.about"), path: "/about" },
-    { title: t("menu.faq"), path: "/faq" },
+    { title: t("menu.career"), path: "/career-advice" },
+    { title: t("menu.about"), path: "/about-us" },
+    { title: t("menu.faq"), path: "/faqs" },
     { title: t("menu.contact"), path: "/contact" },
   ];
 
@@ -112,7 +112,11 @@ const Header = () => {
               <li key={idx}>
                 <Link
                   to={item.path}
-                  className={`text-gray-800 font-semibold text-[16px] hover:text-red-600 transition-colors `}
+                  className={`font-semibold text-[16px] transition-colors ${
+                    location.pathname === item.path
+                      ? "text-red-600 border-b-2 border-red-600"
+                      : "text-gray-800 hover:text-red-600"
+                  }`}
                 >
                   {item.title}
                 </Link>
