@@ -168,8 +168,8 @@ const Footer = () => {
       </div>
       <div className="bg-black">
         <div className="max-w-screen-xl mx-auto">
-          <div className="py-6 grid grid-cols-1 sm:grid-cols-2 custom:grid-cols-3 items-center justify-center">
-            <div className="flex items-center gap-2 text-white/80">
+          <div className="py-6 grid grid-cols-1 sm:grid-cols-2 custom:grid-cols-3 items-center justify-center gap-2">
+            <div className="flex items-center justify-center custom:justify-normal gap-2 text-white/80">
               <a
                 className="hover:text-red-500 text-sm"
                 href="https://www.dimedia.hr/"
@@ -181,12 +181,12 @@ const Footer = () => {
                 <img src={intenet} alt="" />
               </a>
             </div>
-            <div className="text-white/80 flex items-center gap-x-3 text-sm">
+            <div className="text-white/80 flex items-center justify-center gap-x-3 text-sm">
               <Link>{t("footer.trem")}</Link>
               <Link>{t("footer.trem")}</Link>
             </div>
 
-            <div>
+            <div className="flex items-center justify-center">
               <p className="text-white/80 text-sm">{t("footer.copyright")}</p>
             </div>
           </div>
