@@ -51,7 +51,8 @@
     "inputphone": "Phone number",
     "inputeamil": "Your email",
     "inputmesage": "Message",
-    "condition": "I accept Terms and conditions",
+    "condition": "I accept",
+    "conditiontram": "Terms and conditions",
     "sendBtn": "Send",
     "share": "Share",
 
@@ -59,5 +60,22 @@
     "trem": "Terms of use",
     "sitemap": "Sitemap",
     "copyright": "© 2015 | All Rights reserved. Concessum.com"
+  },
+  "candidate": {
+    "p1": "If a candidate applied for the presently opened position, the one he or she meets the requirements,the candiate will get the CV review free of charge and consultation for approaching the interview, needed document collection, and in case of international employment about the relocation and lifestyle in general in the foreign country.",
+    "p2": "Before going to the interview,a candidate will be tested in the foreign language competence and do the pre-interview.The candidates who do not meet the criteria can get registered in our data base and be contacted when the opportunity occurs.",
+    "p3": "The candiates are encouraged to contact the agency by their own initiative in case they see the advertisement for the position comliant with their qualifications.If needed, the candiates can order other optional services like visa and work permit application,tax refund,document translation by court interpretor,writing CV..etc.",
+    "from": "From",
+    "inputname": "Your name and surename",
+    "inputphone": "Phone number",
+    "inputeamil": "Your email",
+    "profession": "Profession",
+    "username": "Username",
+    "password": "Password",
+    "birth": "Birth date",
+    "cv": "CV upload",
+    "size": "Max. document size is 1 MB. Allowed formats (extensions): PDF, DOC, DOCX",
+    "condition": "I agree that my personal information is used to process my inquiries and to deal with them in accordance with the regulations on personal data protection. I agree that these same data will be stored electronically in the form of data or information. I am familiar with the fact that this consent can be withdrawn at any time by express written request. By continuing, I agree that the Concessum representatives contact me via e-mail or phone (including automatic dialing systems) at the indicated email address or telephone number for marketing purposes.",
+    "register": "Register"
   }
 }

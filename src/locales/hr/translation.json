@@ -52,7 +52,8 @@
     "inputphone": "Telefon",
     "inputeamil": "Vaš email",
     "inputmesage": "Poruka",
-    "condition": "Prihvaćam Prava i uvjete korištenja",
+    "condition": "Prihvaćam Prava",
+    "conditiontram": "i uvjete korištenja",
     "sendBtn": "Pošalji",
     "share": "Podijeli",
 
@@ -60,5 +61,22 @@
     "trem": "Uvjeti korištenja",
     "sitemap": "Sitemap",
     "copyright": "© 2015 | Sva prava pridržana. Concessum.com"
+  },
+  "candidate": {
+    "p1": "Ako se kandidat prijavio za neku od aktualno otvorenih pozicija, a za koje zadovoljava uvjete, kandidat će dobiti besplatan pregled CV-a i savjetovanje oko izlaska na intervju i savjetovanje u vezi sakupljanja dokumentacije,a kod zapošljavanja u inozemstvu dobit će informacije u vezi preseljenja i općenito života u stranoj zemlji.",
+    "p2": "Prije samog izlaska na intervju sa poslodavcem, kandidat će proći i testiranje znanja stranog jezika i pred-intervju. Kandidati koji ne zadovoljavaju uvjete za trenutno otvorene pozicije postoji mogućnost besplatnog unosa u bazu. Takvi kandidati kontaktiraju se u momentu kada se otvore pozicije sukladne njihovim kvalifikacijama.",
+    "p3": "Ohrabrujemo kandidate da nas i sami kontaktiraju, ako vide oglašenu neku poziciju za koju bi se željeli natjecati. Po potrebi kandidat može naručiti i izborne usluge kao npr. ishođenje vize i radne dozvole, povrat poreza, prijevod dokumenata i ovjeru od sudskog tumača, pisanje i uređivanje životopisa…itd.",
+    "from": "Obrazac",
+    "inputname": "Vaše ime i prezime",
+    "inputphone": "Telefon",
+    "inputeamil": "Vaš email",
+    "profession": "Zanimanje",
+    "username": "Korisničko ime",
+    "password": "Lozinka",
+    "birth": "Datum rođenja",
+    "cv": "Upload životopisa",
+    "size": "Maksimalna veličina dokumenta je 1 MB. Dopušteni formati (ekstenzije): PDF, DOC, DOCX",
+    "condition": "Suglasan sam da se moji osobni podaci koriste za obradu mog upita te da se s njima postupa u skladu sa propisima o zaštiti osobnih podataka. Slažem se s tim da će se ti isti podaci elektronski spremiti u obliku podataka ili informacija. Upoznat sam sa činjenicom da ovu suglasnost mogu povući u bilo kojem trenutku izričitim zahtjevom pisanim putem. Nastavkom pristajem na to da me predstavnici Concessum-a kontaktiraju putem e-pošte ili telefona (uključujući automatske sustave biranja) na naznačenu adresu e-pošte ili telefonski broj u marketinške svrhe.",
+    "register": "Prijavi se "
   }
 }

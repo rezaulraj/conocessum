@@ -11,7 +11,7 @@ import {
 import { FaTimes } from "react-icons/fa";
 
 import logo from "../../assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,9 +39,7 @@ const Header = () => {
 
   return (
     <nav
-      className={`bg-white transition-shadow ${
-        isScrolled ? "shadow-md" : ""
-      }`}
+      className={`bg-white transition-shadow ${isScrolled ? "shadow-md" : ""}`}
     >
       {/* Top Contact/Language Bar */}
       <div className="hidden max-w-screen-xl mx-auto md:flex items-center justify-between px-4 lg:px-8 xl:px-0 py-2">
@@ -87,6 +85,10 @@ const Header = () => {
               key={lang}
               className={`px-3 py-1 hover:text-red-600 ${
                 lang === "EN" ? "border-l border-r border-gray-200" : ""
+              } ${
+                i18n.language === lang.toLowerCase()
+                  ? "text-red-600 font-bold"
+                  : "text-gray-800"
               }`}
               onClick={() => i18n.changeLanguage(lang.toLowerCase())}
             >
@@ -123,13 +125,21 @@ const Header = () => {
         <div className="md:hidden flex items-center space-x-4">
           <div className="flex">
             <button
-              className="px-2 hover:text-red-600"
+              className={`px-2 hover:text-red-600 ${
+                i18n.language === "hr"
+                  ? "text-red-600 font-bold"
+                  : "text-gray-800"
+              }`}
               onClick={() => i18n.changeLanguage("hr")}
             >
               HR
             </button>
             <button
-              className="px-2 hover:text-red-600 border-l border-gray-200"
+              className={`px-2 hover:text-red-600 border-l border-gray-200 ${
+                i18n.language === "en"
+                  ? "text-red-600 font-bold"
+                  : "text-gray-800"
+              }`}
               onClick={() => i18n.changeLanguage("en")}
             >
               EN
@@ -148,7 +158,7 @@ const Header = () => {
                 viewBox="0 0 24 24"
                 strokeWidth={1.5}
                 stroke="currentColor"
-                className="w-6 h-6"
+                className="w-8 h-8 bg-red-500 text-white p-1 font-bold"
               >
                 <path
                   strokeLinecap="round"
