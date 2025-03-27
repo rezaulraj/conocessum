@@ -31,24 +31,28 @@ const HomePage = () => {
       heading: t("logotext.heading1"),
       subheading: t("logotext.subheading1"),
       image: logoimg1,
+      url: "/candidates",
       button: t("logotext.button"),
     },
     {
       heading: t("logotext.heading2"),
       subheading: t("logotext.subheading2"),
       image: logoimg2,
+      url: "/clients",
       button: t("logotext.button"),
     },
     {
       heading: t("logotext.heading3"),
       subheading: t("logotext.subheading3"),
       image: logoimg3,
+      url: "/services/tax-refund",
       button: t("logotext.button"),
     },
     {
       heading: t("logotext.heading4"),
       subheading: t("logotext.subheading4"),
       image: logoimg4,
+      url: "/career-advice",
       button: t("logotext.button"),
     },
   ];
@@ -150,7 +154,8 @@ const HomePage = () => {
             {cardData.map((card, index) => (
               <Link
                 key={index}
-                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+                to={card.url}
+                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer"
               >
                 <div className="p-6 flex flex-col items-center justify-between h-[420px]">
                   <img src={card.image} alt="" className="" />
