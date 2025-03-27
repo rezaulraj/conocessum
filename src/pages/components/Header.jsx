@@ -44,7 +44,7 @@ const Header = () => {
       {/* Top Contact/Language Bar */}
       <div className="hidden max-w-screen-xl mx-auto md:flex items-center justify-between px-4 lg:px-8 xl:px-0 py-2">
         {/* Social/Contact Links */}
-        <div className="flex items-center text-gray-800">
+        <div className="flex items-center text-gray-800 border-l border-r border-gray-200">
           {[
             { icon: <FaFacebookF /> },
             { icon: <FaLinkedinIn /> },

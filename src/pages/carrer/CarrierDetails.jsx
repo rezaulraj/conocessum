@@ -5,7 +5,7 @@ import c2 from "../../assets/career/c2.jpg";
 import c3 from "../../assets/career/c3.jpg";
 import c4 from "../../assets/career/c4.jpg";
 import titleimge from "../../assets/home/title_bg.jpg";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import {
   FaFacebook,
   FaGooglePlus,
@@ -15,9 +15,11 @@ import {
 import { ImMail } from "react-icons/im";
 import { MdArrowForwardIos } from "react-icons/md";
 import Login from "../components/Login";
-const Carrer = () => {
+import NotFoundPage from "../components/NotFoundPage";
+const CarrierDetails = () => {
   const { t } = useTranslation();
   const [showIcons, setShowIcons] = useState(false);
+  const { cId } = useParams();
   const careerdata = [
     {
       img: c1,
@@ -44,14 +46,14 @@ const Carrer = () => {
       btn: t("careers.cbtn"),
     },
   ];
-
-  const careerlinks = [
-    t("careers.ch1"),
-    t("careers.ch2"),
-    t("careers.ch3"),
-    t("careers.ch4"),
-  ];
-
+  console.log("heee", cId);
+  const service = careerdata.find(
+    (s) => s.cardh1.toLowerCase().replace(/\s+/g, "-") === cId
+  );
+  console.log("services", service);
+  if (!service) {
+    return <NotFoundPage />;
+  }
   return (
     <div className="bg-white/90">
       <div
@@ -63,8 +65,12 @@ const Carrer = () => {
             <div className="flex items-center text-2xl gap-x-3 text-white/90">
               <MdArrowForwardIos />
               <h2 className="text-white/80 font-bold uppercase">
-                {t("careers.career")}
+                {t("services.service")}
               </h2>
+              <MdArrowForwardIos />
+              <h1 className="text-white/80 font-bold uppercase">
+                {service.cardTitle}
+              </h1>
             </div>
             <div className="flex items-end justify-end py-14 relative pr-6 md:pr-0">
               <button
@@ -98,37 +104,18 @@ const Carrer = () => {
         <div className="flex flex-col custom:flex-row gap-8">
           {/* Main Content (left side) */}
           <div className="flex-1 space-y-3 text-gray-800">
-            {careerdata.map((career, ind) => (
-              <div
-                key={ind}
-                className="grid grid-cols-1 custom:grid-cols-2 gap-6 mt-16"
-              >
-                <img
-                  src={career.img}
-                  alt={career.chardp1}
-                  className="bg-gray-300 border border-gray-200 rounded-sm object-cover h-full"
-                />
-                <div className="flex flex-col items-start space-y-6">
-                  <Link
-                    to={`/career-advice/${encodeURIComponent(
-                      career.cardh1.toLowerCase().replace(/\s+/g, "-")
-                    )}`}
-                    className="text-2xl text-red-500 font-bold tracking-wide"
-                  >
-                    {career.cardh1}
-                  </Link>
-                  <p className="text-gray-800">{career.chardp1}</p>
-                  <Link
-                    to={`/career-advice/${encodeURIComponent(
-                      career.cardh1.toLowerCase().replace(/\s+/g, "-")
-                    )}`}
-                    className="px-4 py-2 border border-gray-300 hover:bg-red-500 uppercase hover:text-white text-lg font-semibold flex items-center gap-x-3"
-                  >
-                    {career.btn} <MdArrowForwardIos />
-                  </Link>
-                </div>
+            <div className="flex flex-col">
+              <div className="mb-6">
+                <img src={service.img} />
               </div>
-            ))}
+              <div className="flex flex-col items-start space-y-6 mt-6">
+                <h2 className="text-2xl text-gray-800 font-bold tracking-wide">
+                  {service?.cardh1}
+                </h2>
+
+                <p className="text-gray-800">{service?.chardp1}</p>
+              </div>
+            </div>
           </div>
 
           {/* Sidebar Links (right side) */}
@@ -161,4 +148,4 @@ const Carrer = () => {
   );
 };
 
-export default Carrer;
+export default CarrierDetails;

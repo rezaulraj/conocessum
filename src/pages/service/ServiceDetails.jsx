@@ -256,17 +256,8 @@ const ServiceDetails = () => {
       },
     },
   ];
-  const servicelinks = [
-    t("services.link1"),
-    t("services.link2"),
-    t("services.link3"),
-    t("services.link4"),
-    t("services.link5"),
-    t("services.link6"),
-    t("services.link7"),
-    t("services.link8"),
-    t("services.link9"),
-  ];
+ 
+  
 
   const service = serverdata.find(
     (s) => s.cardTitle.toLowerCase().replace(/\s+/g, "-") === serviceId
