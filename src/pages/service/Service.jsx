@@ -2,7 +2,12 @@ import React, { useState } from "react";
 import titleimge from "../../assets/home/title_bg.jpg";
 import { useTranslation } from "react-i18next";
 import { MdArrowForwardIos } from "react-icons/md";
-import { FaFacebook, FaGooglePlus, FaShareAlt, FaTwitterSquare } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaGooglePlus,
+  FaShareAlt,
+  FaTwitterSquare,
+} from "react-icons/fa";
 import s1 from "../../assets/sevices/s1.jpg";
 import s2 from "../../assets/sevices/s2.jpg";
 import s3 from "../../assets/sevices/s3.jpg";
@@ -19,54 +24,63 @@ const Service = () => {
 
   const serverdata = [
     {
+      id: 0,
       img: s1,
       cardh1: t("services.cardh1"),
       chardp1: t("services.cardp1"),
       btn: t("services.cardbtn"),
     },
     {
+      id: 1,
       img: s2,
       cardh1: t("services.cardh2"),
       chardp1: t("services.cardp2"),
       btn: t("services.cardbtn"),
     },
     {
+      id: 2,
       img: s3,
       cardh1: t("services.cardh3"),
       chardp1: t("services.cardp3"),
       btn: t("services.cardbtn"),
     },
     {
+      id: 3,
       img: s4,
       cardh1: t("services.cardh4"),
       chardp1: t("services.cardp1"),
       btn: t("services.cardbtn"),
     },
     {
+      id: 4,
       img: s5,
       cardh1: t("services.cardh5"),
       chardp1: t("services.cardp5"),
       btn: t("services.cardbtn"),
     },
     {
+      id: 5,
       img: s6,
       cardh1: t("services.cardh6"),
       chardp1: t("services.cardp6"),
       btn: t("services.cardbtn"),
     },
     {
+      id: 6,
       img: s7,
       cardh1: t("services.cardh7"),
       chardp1: t("services.cardp7"),
       btn: t("services.cardbtn"),
     },
     {
+      id: 7,
       img: s8,
       cardh1: t("services.cardh8"),
       chardp1: t("services.cardp8"),
       btn: t("services.cardbtn"),
     },
     {
+      id: 7,
       img: "",
       cardh1: t("services.cardh9"),
       chardp1: t("services.cardp9"),
@@ -85,6 +99,7 @@ const Service = () => {
     t("services.link8"),
     t("services.link9"),
   ];
+
   return (
     <div className="bg-white/90">
       <div
@@ -135,7 +150,7 @@ const Service = () => {
             <p>{t("services.sp2")}</p>
             <p>{t("services.sp3")}</p>
             <p>{t("services.sp4")}</p>
-
+            {/* In your Service.js component */}
             {serverdata.map((service, ind) => (
               <div
                 key={ind}
@@ -147,13 +162,23 @@ const Service = () => {
                   className="bg-gray-300 border border-gray-200 rounded-sm object-cover h-full"
                 />
                 <div className="flex flex-col items-start space-y-6">
-                  <Link className="text-2xl text-red-500 font-bold tracking-wide">
+                  <Link
+                    to={`/services/${encodeURIComponent(
+                      service.cardh1.toLowerCase().replace(/\s+/g, "-")
+                    )}`}
+                    className="text-2xl text-red-500 font-bold tracking-wide"
+                  >
                     {service.cardh1}
                   </Link>
                   <p className="text-gray-800">{service.chardp1}</p>
-                  <button className="px-4 py-2 border border-gray-300 hover:bg-red-500 uppercase hover:text-white text-lg font-semibold flex items-center gap-x-3">
+                  <Link
+                    to={`/services/${encodeURIComponent(
+                      service.cardh1.toLowerCase().replace(/\s+/g, "-")
+                    )}`}
+                    className="px-4 py-2 border border-gray-300 hover:bg-red-500 uppercase hover:text-white text-lg font-semibold flex items-center gap-x-3"
+                  >
                     {service.btn} <MdArrowForwardIos />
-                  </button>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -166,14 +191,16 @@ const Service = () => {
                 {t("services.service")}
               </h3>
               <ul className="space-y-3">
-                {servicelinks.map((link, index) => (
+                {serverdata.map((link, index) => (
                   <li key={index}>
                     <Link
-                      to="#"
+                      to={`/services/${encodeURIComponent(
+                        link?.cardh1?.toLowerCase().replace(/\s+/g, "-")
+                      )}`}
                       className="flex items-center gap-x-2 text-gray-700 hover:text-red-500 transition-colors p-2 hover:bg-gray-100 rounded"
                     >
                       <MdArrowForwardIos className="text-xs" />
-                      {link}
+                      {link.cardh1}
                     </Link>
                   </li>
                 ))}

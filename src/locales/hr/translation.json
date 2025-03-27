@@ -114,6 +114,41 @@
     "link8": "Istraživanje tržišta rada",
     "link9": "Oglasi - Otvorene pozicije"
   },
+  "serviceDetailes": {
+    "sdha1": "ZA POSLODAVCA",
+    "sdpa1": "Aktivno surađujemo s poslodavcem tijekom cijele procedure selekcije i regrutiranja te se prilagođavamo specifičnim zahtjevima ukoliko se pojave.",
+    "sdpa2": "Profiliramo idealnog zaposlenika u suradnji sa poslodavcem te provodimo aktivnosti regrutiranja i selekcije, a koje uključuju sljedeće korake:",
+    "sdal1": "Pronalazak najboljih i adekvatnih radnika za vaše poduzeće.",
+    "sdal2": "Obavljamo za vas zahtijevan proces selekcije i regrutacije.",
+    "sdal3": "Omogućavamo Vam da dobijete optimalnog radnika u najkraćem mogućem roku.",
+    "sdal4": "Jamčimo da će potencijalni kandidat proći kroz nekoliko faza selekcije.",
+    "sdal5": "Provodimo standardnu proceduru koja se sastoji od sakupljanja i provjere dokumentacije, testiranja znanja jezika, provjera kvalifikacija te nekoliko intervjua s potencijalnim kandidatom.",
+    "sdal6": "Ukoliko je potrebno, možemo organizirati i specifična testiranja potrebna za sigurno i uspješno obavljanje radnih obaveza te organizaciju dodatne obuke ili treninga za radnika ili grupu radnika.",
+    "sdha2": "ZA KANDIDATA",
+    "sdpa3": "Pratimo i savjetujemo radnika od trenutka prijave do odlaska na radno mjesto. Za radnika Agencija obavlja sljedeće radnje:",
+    "sdal7": "Apliciramo za oglašenu poziciju",
+    "sdal8": "Prikupljamo i pregledavamo dokumentaciju",
+    "sdal9": "Savjetujemo u vezi dokumentacije i izlaska na intervju",
+    "sdal10": "Savjetujemo u vezi radnih uvjeta i života u stranoj zemlji",
+    "sdal11": "Obavljamo pred-intervju",
+    "sdal12": "Testiramo znanje jezika",
+    "sdal13": "Korespondiramo s poslodavcem",
+    "sdal14": "Pomažemo oko odlaska i relokacije.",
+
+    "sdpb1": "Registrirani smo za djelatnost privremenog zapošljavanja i nudimo uslugu ustupanja radnika zaposlenih u Agenciji na privremeni rad u tvrtki Korisnika.",
+    "sdpb2": "Sklapamo ugovor s Korisnikom za usluge o ustupanju radnika prema Zakonu o radu, a s radnicima sklapamo Ugovor o radu za privremeno obavljanje poslova i upućujemo ih na rad Korisnicima usluge. Ustupljeni radnici rade pod nadzorom Korisnika usluge i u skladu s njegovim procesom rada.",
+    "sdpb3": "Usluga može obuhvaćati pronalaženje i selekciju radnika potrebnih Korisniku ili uslugu zapošljavanja radnika koje je Korisnik sam izabrao za obavljanje poslova.",
+    "sdlhb1": "Zašto koristiti našu uslugu privremenog zapošljavanja?",
+    "sdbl1": "Angažiranjem naše Agencije s iskustvom zapošljavanja radnika u EU i svijetu dobivate stručnu i profesionalnu podršku,",
+    "sdbl2": "Ova metoda je pouzdano i brzo rješenje za zapošljavanje pojedinaca i većih grupa radnika",
+    "sdbl3": "Ishođujemo potrebne vize i radne dozvole potrebne za rad u inozemstvu",
+    "sdbl4": "Jamčimo visoke profesionalne standarde i poštivanje svih mjerodavnih zakona",
+    "sdbl5": "Financijska stabilnost",
+    "sdbl6": "Kompletna usluga vođenja HR administracije",
+    "sdbl7": "Popunjavanje radnih mjesta u slučaju bolovanja ili godišnjih odmora",
+    "sdbl8": "Angažiranje stručnjaka za određene projekte",
+    "sdbl9": "Mogućnost zapošljavanja na određeno ili neodređeno vrijeme."
+  },
   "careers": {
     "career": "Kako napisati CV",
     "ch1": "How to write a CV?",
@@ -167,5 +202,20 @@
     "fh12": "12. KAKO SE ZAPOSLITI PREKO VAŠE AGENCIJE?",
     "fp12": "Pošaljite nam svoj životopis kojeg ćemo pregledati. Ukoliko trenutno nemamo otvorenih pozicija sukladnih Vašim kvalifikacijama, dokument ćemo arhivirati i kontaktirati Vas kada se otvore pozicije koje odgovaraju Vašem radnom iskustvu i obrazovanju.",
     "feedback": "OVI ODGOVORI SU OPĆENITI I SVAKA POJEDINA PONUDA MOŽE SE RAZLIKOVATI U UVJETIMA."
+  },
+  "clients": {
+    "client": "klijenti",
+    "cp1": "Concessum uspješno surađuje sa poslodavcima u Hrvatskoj i svijetu, a u svrhu regrutiranja i zapošljavanja kandidata. Za potrebe klijenta Concessum pruža i usluge privremenog zapošljavanja, outsourcinga i administrativne usluge kao što su obračun plaća i istraživanje tržišta, te ishođenje viza i radnih dozvola.",
+    "uname": "Korisničko ime",
+    "email": "Vaš email",
+    "employ": "Naziv poslodavca",
+    "address": "Adresa",
+    "city": "Grad",
+    "country": "Država",
+    "password": "Lozinka",
+    "phone": "Telefon",
+    "message": "Poruka",
+    "contactperson":"Ime osobe za kontakt",
+    "website":"Web stranica"
   }
 }
