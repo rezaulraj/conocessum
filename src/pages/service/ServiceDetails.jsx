@@ -31,6 +31,7 @@ const ServiceDetails = () => {
     {
       id: 0,
       images: [s1, sa1],
+      link: t("services.link1"),
       cardTitle: t("services.cardh1"),
       section1: {
         heading: t("serviceDetailes.sdha1"),
@@ -65,6 +66,7 @@ const ServiceDetails = () => {
     {
       id: 1,
       images: [s2, sa1],
+      link: t("services.link2"),
       cardTitle: t("services.cardh2"),
       section1: {
         paragraphs: [
@@ -90,6 +92,7 @@ const ServiceDetails = () => {
     {
       id: 2,
       images: [s3, sa1],
+      link: t("services.link3"),
       cardTitle: t("services.cardh3"),
       section1: {
         paragraphs: [
@@ -114,6 +117,7 @@ const ServiceDetails = () => {
     {
       id: 3,
       images: [s4, sa1],
+      link: t("services.link4"),
       cardTitle: t("services.cardh4"),
       section1: {
         paragraphs: [
@@ -138,6 +142,7 @@ const ServiceDetails = () => {
     {
       id: 4,
       images: [s5, sa1],
+      link: t("services.link5"),
       cardTitle: t("services.cardh5"),
       section1: {
         paragraphs: [
@@ -162,6 +167,7 @@ const ServiceDetails = () => {
     {
       id: 5,
       images: [s6, sa1],
+      link: t("services.link6"),
       cardTitle: t("services.cardh6"),
       section1: {
         paragraphs: [
@@ -186,6 +192,7 @@ const ServiceDetails = () => {
     {
       id: 6,
       images: [s7, sa1],
+      link: t("services.link7"),
       cardTitle: t("services.cardh7"),
       section1: {
         paragraphs: [
@@ -210,6 +217,7 @@ const ServiceDetails = () => {
     {
       id: 7,
       images: [s8, sa1],
+      link: t("services.link8"),
       cardTitle: t("services.cardh8"),
       section1: {
         paragraphs: [
@@ -234,6 +242,7 @@ const ServiceDetails = () => {
     {
       id: 8,
       images: [s8, sa1],
+      link: t("services.link9"),
       cardTitle: t("services.cardh9"),
       section1: {
         paragraphs: [
@@ -256,11 +265,9 @@ const ServiceDetails = () => {
       },
     },
   ];
- 
-  
 
   const service = serverdata.find(
-    (s) => s.cardTitle.toLowerCase().replace(/\s+/g, "-") === serviceId
+    (s) => s.link.toLowerCase().replace(/\s+/g, "-") === serviceId
   );
   console.log("services", service);
   if (!service) {
@@ -369,7 +376,7 @@ const ServiceDetails = () => {
                   <li key={index}>
                     <Link
                       to={`/services/${encodeURIComponent(
-                        link?.cardTitle?.toLowerCase().replace(/\s+/g, "-")
+                        link?.link?.toLowerCase().replace(/\s+/g, "-")
                       )}`}
                       className="flex items-center gap-x-2 text-gray-700 hover:text-red-500 transition-colors p-2 hover:bg-gray-100 rounded"
                     >

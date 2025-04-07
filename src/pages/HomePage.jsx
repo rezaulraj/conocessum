@@ -17,6 +17,7 @@ import logoimg3 from "../assets/home/logoimg3.png";
 import logoimg4 from "../assets/home/logoimg4.png";
 import { CgLogIn } from "react-icons/cg";
 import Login from "./components/Login";
+import { IoIosArrowForward } from "react-icons/io";
 const HomePage = () => {
   const [isHovered, setIsHovered] = useState(false);
   const slides = [
@@ -87,11 +88,11 @@ const HomePage = () => {
           >
             {slides.map((slide) => (
               <SwiperSlide key={slide.id}>
-                <div className="relative w-full h-full">
+                <div className="relative w-full h-full cursor-move">
                   <img
                     src={slide.image}
                     alt={slide.alt}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover "
                   />
                   <div className="absolute inset-0 bg-black/20 flex items-center justify-center"></div>
                 </div>
@@ -165,9 +166,9 @@ const HomePage = () => {
                   <p className="text-gray-600 mb-4 text-center">
                     {card.subheading}
                   </p>
-                  <button className="flex items-center text-gray-800 font-semibold text-lg px-6 py-2 rounded-sm transition-colors border border-gray-300 hover:bg-red-600/80 hover:text-white shadow-2xl">
+                  <button className="flex w-10/12 items-center text-gray-800 font-semibold text-lg px-6 py-2 rounded-sm transition-colors border border-gray-300 hover:bg-red-600/80 hover:text-white shadow-2xl uppercase">
                     {card.button}
-                    <MdArrowForward className="ml-1" />
+                    <IoIosArrowForward className="ml-1" />
                   </button>
                 </div>
               </Link>

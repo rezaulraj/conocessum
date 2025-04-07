@@ -21,7 +21,7 @@ const About = () => {
   const abloutlinks = [
     t("abouts.about-us"),
     t("abouts.alink1"),
-    t("abouts.alink1"),
+    t("abouts.alink2"),
   ];
 
   const contentParagraphs = [

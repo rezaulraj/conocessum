@@ -8,10 +8,10 @@ import i18n from "../src/pages/i18n.jsx"; // Import your i18n config
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <I18nextProvider i18n={i18n}>
-      <BrowserRouter>
+    <BrowserRouter>
+      <I18nextProvider i18n={i18n}>
         <App />
-      </BrowserRouter>
-    </I18nextProvider>
+      </I18nextProvider>
+    </BrowserRouter>
   </StrictMode>
 );

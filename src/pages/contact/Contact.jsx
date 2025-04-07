@@ -63,88 +63,79 @@ const Contact = () => {
         </div>
       </div>
       <div className="max-w-screen-xl mx-auto py-6">
-        <div className="max-w-screen-custom space-y-3 px-2 md:px-0">
-          <p className="text-gray-700 text-xl font-semibold">
-            {t("contacts.cinfo")}
-          </p>
-        </div>
         {/* from */}
         <form className="max-w-screen-custom grid grid-cols-1 sm:grid-cols-12 gap-4 px-2 md:px-0">
-          <div className="col-span-4">
+          <div className="col-span-4 space-y-6">
+            <div className="max-w-screen-custom space-y-3 px-2 md:px-0">
+              <p className="text-gray-700 text-xl font-semibold">
+                {t("contacts.cinfo")}
+              </p>
+            </div>
             <p className="text-gray-700">{t("contacts.info")}</p>
-            <p className="text-gray-700 text-xl font-semibold">
-              Tel:{" "}
-              <span className="text-red-400 text-sm underline">
-                +385 1 4668 604
-              </span>
-            </p>
-            <p className="text-gray-950 text-xl font-semibold">
-              Fax{" "}
-              <span className="text-red-400 text-sm underline">
-                +385 1 617 1548
-              </span>
-            </p>
-            <p className="text-gray-950 text-xl font-semibold">
-              Email{" "}
-              <span className="text-red-400 text-sm underline">
-                info@concessum.com
-              </span>
-            </p>
-            <p className="text-gray-950 text-xl font-semibold">
-              Email{" "}
-              <span className="text-red-400 text-sm underline">
-                povratporeza@concessum.com
-              </span>
-            </p>
+            <div>
+              <p className="text-gray-700 text-md font-semibold">
+                Tel:{" "}
+                <span className="text-red-400 text-sm hover:underline cursor-pointer">
+                  +385 1 4668 604
+                </span>
+              </p>
+              <p className="text-gray-700 text-md font-semibold">
+                Fax:{" "}
+                <span className="text-red-400 text-sm hover:underline cursor-pointer">
+                  +385 1 617 1548
+                </span>
+              </p>
+              <p className="text-gray-700 text-md font-semibold">
+                Email:{" "}
+                <span className="text-red-400 text-sm hover:underline cursor-pointer">
+                  info@concessum.com
+                </span>
+              </p>
+              <p className="text-gray-700 text-md font-semibold">
+                Email2:{" "}
+                <span className="text-red-400 text-sm hover:underline cursor-pointer">
+                  povratporeza@concessum.com
+                </span>
+              </p>{" "}
+            </div>
           </div>
           <div className="col-span-8 grid grid-cols-1 gap-2 ">
             <p className="text-gray-700 text-xl font-semibold">
               {t("contacts.form")}
             </p>
             <div className="flex flex-col">
-              <label htmlFor="" className="text-gray-600">
-                {t("clients.uname")}:
-              </label>
               <input
                 required
                 type="text"
-                placeholder={t("clients.uname")}
-                className="h-10 px-2 rounded-sm border w-full bg-white text-gray-800 outline-none focus:ring-1 ring-gray-800"
+                placeholder={t("contacts.uname")}
+                className="h-10 px-2 rounded-sm border custom:w-6/12 w-full bg-white text-gray-800 outline-none focus:ring-1 ring-gray-400"
               />
             </div>
-            <div className="flex flex-col">
-              <label htmlFor="" className="text-gray-600">
-                {t("clients.email")}:
-              </label>
-              <input
-                type="email"
-                required
-                placeholder={t("clients.email")}
-                className="h-10 px-2 rounded-sm border w-full bg-white text-gray-800 outline-none focus:ring-1 ring-gray-800"
-              />
-            </div>
-
-            <div className="flex flex-col">
-              <label htmlFor="" className="text-gray-600">
-                {t("clients.phone")}:
-              </label>
-              <input
-                type="number"
-                required
-                placeholder={t("clients.phone")}
-                className="h-10 px-2 rounded-sm border w-full bg-white text-gray-800 outline-none focus:ring-1 ring-gray-800"
-              />
+            <div className="custom:flex block custom:space-x-2 custom:space-y-0 space-y-2 ">
+              <div className="flex flex-col w-full">
+                <input
+                  type="number"
+                  required
+                  placeholder={t("contacts.phone")}
+                  className="h-10 px-2 rounded-sm border w-full bg-white text-gray-800 outline-none focus:ring-1 ring-gray-400"
+                />
+              </div>
+              <div className="flex flex-col w-full">
+                <input
+                  type="email"
+                  required
+                  placeholder={t("contacts.email")}
+                  className="h-10 px-2 rounded-sm border w-full bg-white text-gray-800 outline-none focus:ring-1 ring-gray-400"
+                />
+              </div>
             </div>
 
             <div className="flex flex-col">
-              <label htmlFor="" className="text-gray-600">
-                {t("clients.message")}:
-              </label>
               <textarea
                 type="text"
                 required
-                placeholder={t("clients.message")}
-                className="h-20 px-2 rounded-sm border w-full bg-white text-gray-800 outline-none focus:ring-1 ring-gray-800"
+                placeholder={t("contacts.message")}
+                className="h-20 p-2 rounded-sm border border-gray-400 w-full bg-white text-gray-800 outline-none focus:ring-0 ring-gray-400"
               />
             </div>
 
@@ -163,8 +154,9 @@ const Contact = () => {
                 <input type="checkbox" name="" id="" className="w-6 h-6" />
                 <p className="flex gap-x-1">
                   {t("footer.condition")}
-                  <a href="" className="text-red-400 underline">
-                    {t("footer.conditiontram")}
+                  <a href="" className="text-blue-400 hover:underline">
+                    {t("footer.conditiontram")}{" "}
+                    <span className="text-red-500">*</span>
                   </a>
                 </p>
               </div>
@@ -175,7 +167,7 @@ const Contact = () => {
                 </span>
               </button>
             </div>
-            <h3>{t("contacts.map")}</h3>
+            <h3 className="text-gray-500 text-xl">{t("contacts.map")}</h3>
             {/* map */}
             <div className="h-[400px] w-full rounded-lg overflow-hidden shadow-lg border-2 border-gray-500">
               <MapContainer

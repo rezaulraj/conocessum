@@ -29,7 +29,7 @@ const Carousel = ({ images }) => {
               <img
                 src={img}
                 alt={`Service ${index + 1}`}
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover cursor-move"
               />
             </div>
           ))}

@@ -73,13 +73,13 @@ const Header = () => {
 
         {/* Login & Language Switcher */}
         <div className="flex items-center">
-          <Link
-            to="/login"
+          <a
+            href="#login"
             className="flex items-center px-3 py-1 border-l border-r border-gray-200"
           >
             <FaArrowRightToBracket className="mr-2" />
             <span className="font-medium">Login</span>
-          </Link>
+          </a>
           {["HR", "EN"].map((lang) => (
             <button
               key={lang}
@@ -177,14 +177,13 @@ const Header = () => {
         {/* Mobile Menu Overlay */}
         {isMenuOpen && (
           <div className="fixed inset-0 z-40 md:hidden">
-            {/* Background Overlay */}
             <div
               className="absolute inset-0 bg-gray-900 bg-opacity-75"
               onClick={() => setIsMenuOpen(false)}
             ></div>
 
             {/* Menu Panel */}
-            <div className="absolute right-0 top-0 h-full w-5/5 max-w-full bg-gray-100 shadow-xl transform transition-transform duration-300 ease-in-out">
+            <div className="absolute right-0 top-0 h-full w-5/5 max-w-full bg-gray-200 shadow-xl transform transition-transform duration-300 ease-in-out">
               <div className="flex flex-col h-full">
                 {/* Menu Header */}
                 <div className="flex items-center justify-between p-4 border-b border-gray-200">
@@ -216,13 +215,14 @@ const Header = () => {
 
                 {/* Menu Footer */}
                 <div className="p-4 border-t border-gray-200">
-                  <Link
-                    to="/login"
+                  <a
+                    href="#login"
                     className="flex items-center justify-center w-full px-4 py-3 bg-red-600 text-white font-medium rounded-lg hover:bg-red-700 transition-colors"
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     <FaArrowRightToBracket className="mr-2" />
                     Login
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

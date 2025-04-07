@@ -26,6 +26,7 @@ const Service = () => {
     {
       id: 0,
       img: s1,
+      link: t("services.link1"),
       cardh1: t("services.cardh1"),
       chardp1: t("services.cardp1"),
       btn: t("services.cardbtn"),
@@ -33,6 +34,7 @@ const Service = () => {
     {
       id: 1,
       img: s2,
+      link: t("services.link2"),
       cardh1: t("services.cardh2"),
       chardp1: t("services.cardp2"),
       btn: t("services.cardbtn"),
@@ -40,6 +42,7 @@ const Service = () => {
     {
       id: 2,
       img: s3,
+      link: t("services.link3"),
       cardh1: t("services.cardh3"),
       chardp1: t("services.cardp3"),
       btn: t("services.cardbtn"),
@@ -47,6 +50,7 @@ const Service = () => {
     {
       id: 3,
       img: s4,
+      link: t("services.link4"),
       cardh1: t("services.cardh4"),
       chardp1: t("services.cardp1"),
       btn: t("services.cardbtn"),
@@ -54,6 +58,7 @@ const Service = () => {
     {
       id: 4,
       img: s5,
+      link: t("services.link5"),
       cardh1: t("services.cardh5"),
       chardp1: t("services.cardp5"),
       btn: t("services.cardbtn"),
@@ -61,6 +66,7 @@ const Service = () => {
     {
       id: 5,
       img: s6,
+      link: t("services.link6"),
       cardh1: t("services.cardh6"),
       chardp1: t("services.cardp6"),
       btn: t("services.cardbtn"),
@@ -68,6 +74,7 @@ const Service = () => {
     {
       id: 6,
       img: s7,
+      link: t("services.link7"),
       cardh1: t("services.cardh7"),
       chardp1: t("services.cardp7"),
       btn: t("services.cardbtn"),
@@ -75,13 +82,15 @@ const Service = () => {
     {
       id: 7,
       img: s8,
+      link: t("services.link8"),
       cardh1: t("services.cardh8"),
       chardp1: t("services.cardp8"),
       btn: t("services.cardbtn"),
     },
     {
-      id: 7,
+      id: 8,
       img: "",
+      link: t("services.link9"),
       cardh1: t("services.cardh9"),
       chardp1: t("services.cardp9"),
       btn: t("services.cardbtn"),
@@ -164,7 +173,7 @@ const Service = () => {
                 <div className="flex flex-col items-start space-y-6">
                   <Link
                     to={`/services/${encodeURIComponent(
-                      service.cardh1.toLowerCase().replace(/\s+/g, "-")
+                      service.link.toLowerCase().replace(/\s+/g, "-")
                     )}`}
                     className="text-2xl text-red-500 font-bold tracking-wide"
                   >
@@ -173,7 +182,7 @@ const Service = () => {
                   <p className="text-gray-800">{service.chardp1}</p>
                   <Link
                     to={`/services/${encodeURIComponent(
-                      service.cardh1.toLowerCase().replace(/\s+/g, "-")
+                      service.link.toLowerCase().replace(/\s+/g, "-")
                     )}`}
                     className="px-4 py-2 border border-gray-300 hover:bg-red-500 uppercase hover:text-white text-lg font-semibold flex items-center gap-x-3"
                   >
@@ -195,7 +204,7 @@ const Service = () => {
                   <li key={index}>
                     <Link
                       to={`/services/${encodeURIComponent(
-                        link?.cardh1?.toLowerCase().replace(/\s+/g, "-")
+                        link?.link?.toLowerCase().replace(/\s+/g, "-")
                       )}`}
                       className="flex items-center gap-x-2 text-gray-700 hover:text-red-500 transition-colors p-2 hover:bg-gray-100 rounded"
                     >

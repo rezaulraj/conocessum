@@ -214,12 +214,16 @@
     "website": "Website"
   },
   "contacts": {
-    "cpage":"Contact",
+    "cpage": "Contact",
     "contact": "Ispod Savskog mosta teče rijeka Sava, Drava ili Dunav?",
     "cinfo": "Contact info",
-    "info": "Contact infoConcessum d.o.o. Prilaz Gjure Deželića 71 10000 Zagreb Croatia",
+    "info": "Concessum d.o.o. Prilaz Gjure Deželića 71 10000 Zagreb Croatia",
     "form": "Contact form",
     "ordinary": "Koliko mjeseci ima godina? (unesite brojčanu vrijednost)",
-    "map":"Find us on the map"
+    "map": "Find us on the map",
+    "uname": "name and surename",
+    "email": "Your email",
+    "phone": "Phone",
+    "message": "Message"
   }
 }

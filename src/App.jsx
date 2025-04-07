@@ -11,7 +11,7 @@ import ServiceDetails from "./pages/service/ServiceDetails";
 import ScrollToTop from "./pages/components/ScrollToTop";
 import Clients from "./pages/client/Clients";
 import Contact from "./pages/contact/Contact";
-import "./App.css"
+import "./App.css";
 import CarrierDetails from "./pages/carrer/CarrierDetails";
 function App() {
   return (
