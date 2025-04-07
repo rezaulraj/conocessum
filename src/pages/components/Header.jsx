@@ -198,18 +198,21 @@ const Header = () => {
 
                 {/* Menu Items */}
                 <nav className="flex-1 overflow-y-auto p-4">
-                  <ul className="space-y-4">
+                  <ul className="space-y-2 divide-y divide-gray-300">
                     {navigation.map((item, idx) => (
                       <li key={idx}>
                         <Link
                           to={item.path}
-                          className="block px-4 py-3 text-lg font-medium text-gray-800 hover:bg-gray-200 rounded-lg transition-colors"
+                          className="block px-4 py-2 text-lg font-medium text-gray-800 hover:bg-gray-200 rounded-lg transition-colors"
                           onClick={() => setIsMenuOpen(false)}
                         >
                           {item.title}
                         </Link>
                       </li>
                     ))}
+                    <li className="block px-4 py-2 text-lg font-medium text-gray-800 hover:bg-gray-200 rounded-lg transition-colors">
+                      <a href="https://www.concessum.com/blog/" target="_blank"  onClick={() => setIsMenuOpen(false)}>Blog</a>
+                    </li>
                   </ul>
                 </nav>
 

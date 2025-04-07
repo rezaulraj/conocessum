@@ -166,7 +166,7 @@ const HomePage = () => {
                   <p className="text-gray-600 mb-4 text-center">
                     {card.subheading}
                   </p>
-                  <button className="flex w-10/12 items-center text-gray-800 font-semibold text-lg px-6 py-2 rounded-sm transition-colors border border-gray-300 hover:bg-red-600/80 hover:text-white shadow-2xl uppercase">
+                  <button className="flex w-10/12 items-center justify-center text-gray-800 font-semibold text-lg px-6 py-2 rounded-sm transition-colors border border-gray-300 hover:bg-red-600/80 hover:text-white shadow-2xl uppercase">
                     {card.button}
                     <IoIosArrowForward className="ml-1" />
                   </button>
