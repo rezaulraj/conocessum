@@ -28,18 +28,24 @@ const CarrierDetails = () => {
       chardp1: t("careers.cp1"),
       btn: t("careers.cbtn"),
       section1: {
-        heading: t("serviceDetailes.sdha1"),
-        paragraphs: [
-          { p: t("serviceDetailes.sdpa1") },
-          { p: t("serviceDetailes.sdpa2") },
-        ],
+        paragraphs: [{ p: t("careers.cap1") }, { p: t("careers.cap2") }],
+        listTile: t("careers.cahl1"),
         list: [
-          { li: t("serviceDetailes.sdal1") },
-          { li: t("serviceDetailes.sdal2") },
-          { li: t("serviceDetailes.sdal3") },
-          { li: t("serviceDetailes.sdal4") },
-          { li: t("serviceDetailes.sdal5") },
-          { li: t("serviceDetailes.sdal6") },
+          { li: t("careers.cal1") },
+          { li: t("careers.cal2") },
+          { li: t("careers.cal3") },
+          { li: t("careers.cal4") },
+          { li: t("careers.cal5") },
+          { li: t("careers.cal6") },
+          { li: t("careers.cal7") },
+          { li: t("careers.cal8") },
+          { li: t("careers.cal9") },
+          { li: t("careers.cal10") },
+          { li: t("careers.cal11") },
+          { li: t("careers.cal12") },
+          { li: t("careers.cal13") },
+          { li: t("careers.cal14") },
+          { li: t("careers.cal15") },
         ],
       },
     },
@@ -50,6 +56,29 @@ const CarrierDetails = () => {
       cardh1: t("careers.ch2"),
       chardp1: t("careers.cp2"),
       btn: t("careers.cbtn"),
+      section1: {
+        paragraphs: [
+          { p: t("careers.cbp1") },
+          { p: t("careers.cbp2") },
+          { p: t("careers.cbp3") },
+        ],
+        listTile: t("careers.cblh1"),
+        list: [{ li: t("careers.cbl1") }, { li: t("careers.cbl2") }],
+      },
+      section2: {
+        listTile: t("careers.cblh2"),
+        list: [
+          { li: t("careers.cbl3") },
+          { li: t("careers.cbl4") },
+          { li: t("careers.cbl5") },
+          { li: t("careers.cbl6") },
+          { li: t("careers.cbl7") },
+        ],
+      },
+      section3: {
+        listTile: t("careers.cblh3"),
+        list: [{ li: t("careers.cbl8") }],
+      },
     },
     {
       img: c3,
@@ -57,6 +86,23 @@ const CarrierDetails = () => {
       cardh1: t("careers.ch3"),
       chardp1: t("careers.cp3"),
       btn: t("careers.cbtn"),
+      section1: {
+        paragraphs: [{ p: t("careers.ccp1") }],
+        listTile: t("careers.cclh1"),
+        list: [
+          { li: t("careers.ccl1") },
+          { li: t("careers.ccl2") },
+          { li: t("careers.ccl3") },
+          { li: t("careers.ccl4") },
+          { li: t("careers.ccl5") },
+          { li: t("careers.ccl6") },
+          { li: t("careers.ccl7") },
+          { li: t("careers.ccl8") },
+        ],
+      },
+      section4: {
+        paragraphs: [{ p: t("careers.ccp2") }, { p: t("careers.ccp3") }],
+      },
     },
     {
       img: c4,
@@ -64,14 +110,39 @@ const CarrierDetails = () => {
       cardh1: t("careers.ch4"),
       chardp1: t("careers.cp4"),
       btn: t("careers.cbtn"),
+      section1: {
+        paragraphs: [{ p: t("careers.cdp1") }, { p: t("careers.cdp2") }],
+        listTile: t("careers.cdlh1"),
+        list: [{ li: t("careers.cdl1") }],
+      },
+      section2: {
+        listTile: t("careers.cdlh2"),
+        list: [
+          { li: t("careers.cdl2") },
+          { li: t("careers.cdl3") },
+          { li: t("careers.cdl4") },
+        ],
+      },
+      section3: {
+        listTile: t("careers.cdlh3"),
+        list: [
+          { li: t("careers.cdl5") },
+          { li: t("careers.cdl6") },
+          { li: t("careers.cdl7") },
+        ],
+      },
+      section4: {
+        listTile: t("careers.cdlh4"),
+        list: [{ li: t("careers.cdl8") }, { li: t("careers.cdl9") }],
+      },
     },
   ];
   console.log("heee", cId);
-  const service = careerdata.find(
+  const career = careerdata.find(
     (s) => s.link.toLowerCase().replace(/\s+/g, "-") === cId
   );
-  console.log("services", service);
-  if (!service) {
+  console.log("career", career);
+  if (!career) {
     return <NotFoundPage />;
   }
   return (
@@ -89,7 +160,7 @@ const CarrierDetails = () => {
               </h2>
               <MdArrowForwardIos />
               <h1 className="text-white/80 font-bold uppercase">
-                {service.cardTitle}
+                {career.cardTitle}
               </h1>
             </div>
             <div className="flex items-end justify-end py-14 relative pr-6 md:pr-0">
@@ -126,14 +197,70 @@ const CarrierDetails = () => {
           <div className="flex-1 space-y-3 text-gray-800">
             <div className="flex flex-col">
               <div className="mb-6">
-                <img src={service.img} />
+                <img src={career.img} />
               </div>
               <div className="flex flex-col items-start space-y-6 mt-6">
-                <h2 className="text-2xl text-gray-800 font-bold tracking-wide">
-                  {service?.cardh1}
+                {career?.section1?.paragraphs?.map((pra, inx) => (
+                  <p key={inx} className="text-gray-800">
+                    {pra.p}
+                  </p>
+                ))}
+                <h2 className="text-lg text-gray-800 font-bold mt-6">
+                  {career?.section1?.listTile}
                 </h2>
 
-                <p className="text-gray-800">{service?.chardp1}</p>
+                <ul className="text-gray-800 list-disc pl-5 space-y-2">
+                  {career?.section1?.list?.map((list, idx) => (
+                    <li key={idx}>{list.li}</li>
+                  ))}
+                </ul>
+
+                {career?.section2 && (
+                  <>
+                    <h2 className="text-lg text-gray-800 font-bold mt-6">
+                      {career?.section2?.listTile}
+                    </h2>
+
+                    <ul className="text-gray-800 list-disc pl-5 space-y-2">
+                      {career?.section2?.list?.map((list, idx) => (
+                        <li key={idx}>{list.li}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+                {career?.section3 && (
+                  <>
+                    <h2 className="text-lg text-gray-800 font-bold mt-6">
+                      {career?.section3?.listTile}
+                    </h2>
+
+                    <ul className="text-gray-800 list-disc pl-5 space-y-2">
+                      {career?.section3?.list?.map((list, idx) => (
+                        <li key={idx}>{list.li}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+
+                {career?.section4 && (
+                  <>
+                    <h2 className="text-lg text-gray-800 font-bold mt-6">
+                      {career?.section4?.listTile}
+                    </h2>
+
+                    <ul className="text-gray-800 list-disc pl-5 space-y-2">
+                      {career?.section4?.list?.map((list, idx) => (
+                        <li key={idx}>{list.li}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+
+                {career?.section4?.paragraphs?.map((pra, inx) => (
+                  <p key={inx} className="text-gray-800">
+                    {pra.p}
+                  </p>
+                ))}
               </div>
             </div>
           </div>
@@ -145,19 +272,29 @@ const CarrierDetails = () => {
                 {t("careers.career")}
               </h3>
               <ul className="space-y-3">
-                {careerdata.map((link, index) => (
-                  <li key={index}>
-                    <Link
-                      to={`/career-advice/${encodeURIComponent(
-                        link.link.toLowerCase().replace(/\s+/g, "-")
-                      )}`}
-                      className="flex items-center gap-x-2 text-gray-700 hover:text-red-500 transition-colors p-2 hover:bg-gray-100 rounded"
-                    >
-                      <MdArrowForwardIos className="text-xs" />
-                      {link.cardh1}
-                    </Link>
-                  </li>
-                ))}
+                {careerdata.map((link, index) => {
+                  const isActive =
+                    cId === link?.link?.toLowerCase().replace(/\s+/g, "-") ||
+                    (cId === undefined && index === 0);
+
+                  return (
+                    <li key={index}>
+                      <Link
+                        to={`/career-advice/${encodeURIComponent(
+                          link?.link?.toLowerCase().replace(/\s+/g, "-")
+                        )}`}
+                        className={`flex items-center gap-x-2 transition-colors p-2 rounded ${
+                          isActive
+                            ? "text-red-500 bg-gray-100 font-medium"
+                            : "text-gray-700 hover:text-red-500 hover:bg-gray-100"
+                        }`}
+                      >
+                        <MdArrowForwardIos className="text-xs" />
+                        {link?.cardh1}
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>

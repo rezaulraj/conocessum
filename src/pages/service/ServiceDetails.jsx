@@ -352,7 +352,7 @@ const ServiceDetails = () => {
                   const isActive =
                     serviceId ===
                       link?.link?.toLowerCase().replace(/\s+/g, "-") ||
-                    (serviceId === undefined && index === 0); // Optional: highlight first item if no service selected
+                    (serviceId === undefined && index === 0);
 
                   return (
                     <li key={index}>
