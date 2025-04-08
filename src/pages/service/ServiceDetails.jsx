@@ -12,12 +12,19 @@ import {
 import s1 from "../../assets/sevices/s1.jpg";
 import sa1 from "../../assets/sevices/sa1.jpg";
 import s2 from "../../assets/sevices/s2.jpg";
+import sa2 from "../../assets/sevices/sa2.jpg";
 import s3 from "../../assets/sevices/s3.jpg";
+import sa3 from "../../assets/sevices/sa3.jpg";
 import s4 from "../../assets/sevices/s4.jpg";
+import sa4 from "../../assets/sevices/sa4.jpg";
 import s5 from "../../assets/sevices/s5.jpg";
+import sa5 from "../../assets/sevices/sa5.jpg";
 import s6 from "../../assets/sevices/s6.jpg";
+import sa6 from "../../assets/sevices/sa6.jpg";
 import s7 from "../../assets/sevices/s7.jpg";
+import sa7 from "../../assets/sevices/sa7.jpg";
 import s8 from "../../assets/sevices/s8.jpg";
+import sa8 from "../../assets/sevices/sa8.jpg";
 import { Link } from "react-router-dom";
 import Login from "../components/Login";
 import { ImMail } from "react-icons/im";
@@ -65,7 +72,7 @@ const ServiceDetails = () => {
     },
     {
       id: 1,
-      images: [s2, sa1],
+      images: [s2, sa2],
       link: t("services.link2"),
       cardTitle: t("services.cardh2"),
       section1: {
@@ -91,178 +98,129 @@ const ServiceDetails = () => {
 
     {
       id: 2,
-      images: [s3, sa1],
+      images: [s3, sa3],
       link: t("services.link3"),
       cardTitle: t("services.cardh3"),
       section1: {
         paragraphs: [
-          { p: t("serviceDetailes.sdpb1") },
-          { p: t("serviceDetailes.sdpb2") },
-          { p: t("serviceDetailes.sdpb3") },
+          { p: t("serviceDetailes.sdpc1") },
+          { p: t("serviceDetailes.sdpc2") },
+          { p: t("serviceDetailes.sdpc3") },
+          { p: t("serviceDetailes.sdpc4") },
         ],
-        listTile: t("serviceDetailes.sdlhb1"),
+        listTile: t("serviceDetailes.sdlhc1"),
         list: [
-          { li: t("serviceDetailes.sdbl1") },
-          { li: t("serviceDetailes.sdbl2") },
-          { li: t("serviceDetailes.sdbl3") },
-          { li: t("serviceDetailes.sdbl4") },
-          { li: t("serviceDetailes.sdbl5") },
-          { li: t("serviceDetailes.sdbl6") },
-          { li: t("serviceDetailes.sdbl7") },
-          { li: t("serviceDetailes.sdbl8") },
-          { li: t("serviceDetailes.sdbl9") },
+          { li: t("serviceDetailes.sdcl1") },
+          { li: t("serviceDetailes.sdcl2") },
+          { li: t("serviceDetailes.sdcl3") },
+          { li: t("serviceDetailes.sdcl4") },
+          { li: t("serviceDetailes.sdcl5") },
+          { li: t("serviceDetailes.sdcl6") },
+          { li: t("serviceDetailes.sdcl7") },
+          { li: t("serviceDetailes.sdcl8") },
         ],
       },
     },
     {
       id: 3,
-      images: [s4, sa1],
+      images: [s4, sa4],
       link: t("services.link4"),
       cardTitle: t("services.cardh4"),
       section1: {
         paragraphs: [
-          { p: t("serviceDetailes.sdpb1") },
-          { p: t("serviceDetailes.sdpb2") },
-          { p: t("serviceDetailes.sdpb3") },
-        ],
-        listTile: t("serviceDetailes.sdlhb1"),
-        list: [
-          { li: t("serviceDetailes.sdbl1") },
-          { li: t("serviceDetailes.sdbl2") },
-          { li: t("serviceDetailes.sdbl3") },
-          { li: t("serviceDetailes.sdbl4") },
-          { li: t("serviceDetailes.sdbl5") },
-          { li: t("serviceDetailes.sdbl6") },
-          { li: t("serviceDetailes.sdbl7") },
-          { li: t("serviceDetailes.sdbl8") },
-          { li: t("serviceDetailes.sdbl9") },
+          { p: t("serviceDetailes.sdpd1") },
+          { p: t("serviceDetailes.sdpd2") },
+          { p: t("serviceDetailes.sdpd3") },
+          { p: t("serviceDetailes.sdpd4") },
         ],
       },
     },
     {
       id: 4,
-      images: [s5, sa1],
+      images: [s5, sa5],
       link: t("services.link5"),
       cardTitle: t("services.cardh5"),
       section1: {
         paragraphs: [
-          { p: t("serviceDetailes.sdpb1") },
-          { p: t("serviceDetailes.sdpb2") },
-          { p: t("serviceDetailes.sdpb3") },
+          { p: t("serviceDetailes.sdpe1") },
+          { p: t("serviceDetailes.sdpe2") },
         ],
-        listTile: t("serviceDetailes.sdlhb1"),
+        listTile: t("serviceDetailes.sdlhe1"),
         list: [
-          { li: t("serviceDetailes.sdbl1") },
-          { li: t("serviceDetailes.sdbl2") },
-          { li: t("serviceDetailes.sdbl3") },
-          { li: t("serviceDetailes.sdbl4") },
-          { li: t("serviceDetailes.sdbl5") },
-          { li: t("serviceDetailes.sdbl6") },
-          { li: t("serviceDetailes.sdbl7") },
-          { li: t("serviceDetailes.sdbl8") },
-          { li: t("serviceDetailes.sdbl9") },
+          { li: t("serviceDetailes.sdel1") },
+          { li: t("serviceDetailes.sdel2") },
+          { li: t("serviceDetailes.sdel3") },
+          { li: t("serviceDetailes.sdel4") },
         ],
       },
     },
     {
       id: 5,
-      images: [s6, sa1],
+      images: [s6, sa6],
       link: t("services.link6"),
       cardTitle: t("services.cardh6"),
       section1: {
         paragraphs: [
-          { p: t("serviceDetailes.sdpb1") },
-          { p: t("serviceDetailes.sdpb2") },
-          { p: t("serviceDetailes.sdpb3") },
+          { p: t("serviceDetailes.sdpf1") },
+          { p: t("serviceDetailes.sdpf2") },
         ],
-        listTile: t("serviceDetailes.sdlhb1"),
-        list: [
-          { li: t("serviceDetailes.sdbl1") },
-          { li: t("serviceDetailes.sdbl2") },
-          { li: t("serviceDetailes.sdbl3") },
-          { li: t("serviceDetailes.sdbl4") },
-          { li: t("serviceDetailes.sdbl5") },
-          { li: t("serviceDetailes.sdbl6") },
-          { li: t("serviceDetailes.sdbl7") },
-          { li: t("serviceDetailes.sdbl8") },
-          { li: t("serviceDetailes.sdbl9") },
-        ],
+        headTile1: t("serviceDetailes.sdhf1"),
+        headTile2: t("serviceDetailes.sdhf2"),
+        headTile3: t("serviceDetailes.sdhf3"),
+        para1: t("serviceDetailes.sdhpf1"),
+        para2: t("serviceDetailes.sdhpf2"),
+        para3: t("serviceDetailes.sdhpf3"),
       },
     },
     {
       id: 6,
-      images: [s7, sa1],
+      images: [s7, sa7],
       link: t("services.link7"),
       cardTitle: t("services.cardh7"),
       section1: {
-        paragraphs: [
-          { p: t("serviceDetailes.sdpb1") },
-          { p: t("serviceDetailes.sdpb2") },
-          { p: t("serviceDetailes.sdpb3") },
-        ],
-        listTile: t("serviceDetailes.sdlhb1"),
+        paragraphs: [{ p: t("serviceDetailes.sdpg1") }],
+        listTile: t("serviceDetailes.sdlhg1"),
         list: [
-          { li: t("serviceDetailes.sdbl1") },
-          { li: t("serviceDetailes.sdbl2") },
-          { li: t("serviceDetailes.sdbl3") },
-          { li: t("serviceDetailes.sdbl4") },
-          { li: t("serviceDetailes.sdbl5") },
-          { li: t("serviceDetailes.sdbl6") },
-          { li: t("serviceDetailes.sdbl7") },
-          { li: t("serviceDetailes.sdbl8") },
-          { li: t("serviceDetailes.sdbl9") },
+          { li: t("serviceDetailes.sdlg1") },
+          { li: t("serviceDetailes.sdlg2") },
+          { li: t("serviceDetailes.sdlg3") },
+          { li: t("serviceDetailes.sdlg4") },
+          { li: t("serviceDetailes.sdlg5") },
+          { li: t("serviceDetailes.sdlg6") },
+        ],
+      },
+      section2: {
+        heading: t("serviceDetailes.sdlhg2"),
+        paragraphs: [
+          { p: t("serviceDetailes.sdpg2") },
+          { p: t("serviceDetailes.sdpg3") },
+        ],
+        list: [
+          { li: t("serviceDetailes.sdlga1") },
+          { li: t("serviceDetailes.sdlga2") },
+          { li: t("serviceDetailes.sdlga3") },
+          { li: t("serviceDetailes.sdlga4") },
         ],
       },
     },
     {
       id: 7,
-      images: [s8, sa1],
+      images: [s8, sa8],
       link: t("services.link8"),
       cardTitle: t("services.cardh8"),
       section1: {
         paragraphs: [
-          { p: t("serviceDetailes.sdpb1") },
-          { p: t("serviceDetailes.sdpb2") },
-          { p: t("serviceDetailes.sdpb3") },
-        ],
-        listTile: t("serviceDetailes.sdlhb1"),
-        list: [
-          { li: t("serviceDetailes.sdbl1") },
-          { li: t("serviceDetailes.sdbl2") },
-          { li: t("serviceDetailes.sdbl3") },
-          { li: t("serviceDetailes.sdbl4") },
-          { li: t("serviceDetailes.sdbl5") },
-          { li: t("serviceDetailes.sdbl6") },
-          { li: t("serviceDetailes.sdbl7") },
-          { li: t("serviceDetailes.sdbl8") },
-          { li: t("serviceDetailes.sdbl9") },
+          { p: t("serviceDetailes.sdph1") },
+          { p: t("serviceDetailes.sdph2") },
+          { p: t("serviceDetailes.sdph3") },
         ],
       },
     },
     {
       id: 8,
-      images: [s8, sa1],
+      images: [],
       link: t("services.link9"),
       cardTitle: t("services.cardh9"),
-      section1: {
-        paragraphs: [
-          { p: t("serviceDetailes.sdpb1") },
-          { p: t("serviceDetailes.sdpb2") },
-          { p: t("serviceDetailes.sdpb3") },
-        ],
-        listTile: t("serviceDetailes.sdlhb1"),
-        list: [
-          { li: t("serviceDetailes.sdbl1") },
-          { li: t("serviceDetailes.sdbl2") },
-          { li: t("serviceDetailes.sdbl3") },
-          { li: t("serviceDetailes.sdbl4") },
-          { li: t("serviceDetailes.sdbl5") },
-          { li: t("serviceDetailes.sdbl6") },
-          { li: t("serviceDetailes.sdbl7") },
-          { li: t("serviceDetailes.sdbl8") },
-          { li: t("serviceDetailes.sdbl9") },
-        ],
-      },
     },
   ];
 
@@ -337,9 +295,27 @@ const ServiceDetails = () => {
                     {pra.p}
                   </p>
                 ))}
+                {service?.section1?.headTile1 && (
+                  <>
+                    <h2 className="text-lg text-gray-800 font-bold mt-6">
+                      {service?.section1?.headTile1}
+                    </h2>
+                    <p className="text-gray-800">{service?.section1?.para1}</p>
+                    <h2 className="text-lg text-gray-800 font-bold mt-6">
+                      {service?.section1?.headTile2}
+                    </h2>
+                    <p className="text-gray-800">{service?.section1?.para2}</p>
+                    <h2 className="text-lg text-gray-800 font-bold mt-6">
+                      {service?.section1?.headTile3}
+                    </h2>
+                    <p className="text-gray-800">{service?.section1?.para3}</p>
+                  </>
+                )}
+
                 <h2 className="text-lg text-gray-800 font-bold mt-6">
                   {service?.section1?.listTile}
                 </h2>
+
                 <ul className="text-gray-800 list-disc pl-5 space-y-2">
                   {service?.section1?.list?.map((list, idx) => (
                     <li key={idx}>{list.li}</li>
@@ -372,19 +348,30 @@ const ServiceDetails = () => {
                 {t("careers.career")}
               </h3>
               <ul className="space-y-3">
-                {serverdata.map((link, index) => (
-                  <li key={index}>
-                    <Link
-                      to={`/services/${encodeURIComponent(
-                        link?.link?.toLowerCase().replace(/\s+/g, "-")
-                      )}`}
-                      className="flex items-center gap-x-2 text-gray-700 hover:text-red-500 transition-colors p-2 hover:bg-gray-100 rounded"
-                    >
-                      <MdArrowForwardIos className="text-xs" />
-                      {link?.cardTitle}
-                    </Link>
-                  </li>
-                ))}
+                {serverdata.map((link, index) => {
+                  const isActive =
+                    serviceId ===
+                      link?.link?.toLowerCase().replace(/\s+/g, "-") ||
+                    (serviceId === undefined && index === 0); // Optional: highlight first item if no service selected
+
+                  return (
+                    <li key={index}>
+                      <Link
+                        to={`/services/${encodeURIComponent(
+                          link?.link?.toLowerCase().replace(/\s+/g, "-")
+                        )}`}
+                        className={`flex items-center gap-x-2 transition-colors p-2 rounded ${
+                          isActive
+                            ? "text-red-500 bg-gray-100 font-medium"
+                            : "text-gray-700 hover:text-red-500 hover:bg-gray-100"
+                        }`}
+                      >
+                        <MdArrowForwardIos className="text-xs" />
+                        {link?.cardTitle}
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           </div>

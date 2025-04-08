@@ -23,24 +23,44 @@ const CarrierDetails = () => {
   const careerdata = [
     {
       img: c1,
+      link: t("careers.chl1"),
       cardh1: t("careers.ch1"),
       chardp1: t("careers.cp1"),
       btn: t("careers.cbtn"),
+      section1: {
+        heading: t("serviceDetailes.sdha1"),
+        paragraphs: [
+          { p: t("serviceDetailes.sdpa1") },
+          { p: t("serviceDetailes.sdpa2") },
+        ],
+        list: [
+          { li: t("serviceDetailes.sdal1") },
+          { li: t("serviceDetailes.sdal2") },
+          { li: t("serviceDetailes.sdal3") },
+          { li: t("serviceDetailes.sdal4") },
+          { li: t("serviceDetailes.sdal5") },
+          { li: t("serviceDetailes.sdal6") },
+        ],
+      },
     },
+
     {
       img: c2,
+      link: t("careers.chl2"),
       cardh1: t("careers.ch2"),
       chardp1: t("careers.cp2"),
       btn: t("careers.cbtn"),
     },
     {
       img: c3,
+      link: t("careers.chl3"),
       cardh1: t("careers.ch3"),
       chardp1: t("careers.cp3"),
       btn: t("careers.cbtn"),
     },
     {
       img: c4,
+      link: t("careers.chl4"),
       cardh1: t("careers.ch4"),
       chardp1: t("careers.cp4"),
       btn: t("careers.cbtn"),
@@ -48,7 +68,7 @@ const CarrierDetails = () => {
   ];
   console.log("heee", cId);
   const service = careerdata.find(
-    (s) => s.cardh1.toLowerCase().replace(/\s+/g, "-") === cId
+    (s) => s.link.toLowerCase().replace(/\s+/g, "-") === cId
   );
   console.log("services", service);
   if (!service) {
@@ -129,7 +149,7 @@ const CarrierDetails = () => {
                   <li key={index}>
                     <Link
                       to={`/career-advice/${encodeURIComponent(
-                        link.cardh1.toLowerCase().replace(/\s+/g, "-")
+                        link.link.toLowerCase().replace(/\s+/g, "-")
                       )}`}
                       className="flex items-center gap-x-2 text-gray-700 hover:text-red-500 transition-colors p-2 hover:bg-gray-100 rounded"
                     >

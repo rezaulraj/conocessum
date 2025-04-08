@@ -21,35 +21,32 @@ const Carrer = () => {
   const careerdata = [
     {
       img: c1,
+      link: t("careers.chl1"),
       cardh1: t("careers.ch1"),
       chardp1: t("careers.cp1"),
       btn: t("careers.cbtn"),
     },
     {
       img: c2,
+      link: t("careers.chl2"),
       cardh1: t("careers.ch2"),
       chardp1: t("careers.cp2"),
       btn: t("careers.cbtn"),
     },
     {
       img: c3,
+      link: t("careers.chl3"),
       cardh1: t("careers.ch3"),
       chardp1: t("careers.cp3"),
       btn: t("careers.cbtn"),
     },
     {
       img: c4,
+      link: t("careers.chl4"),
       cardh1: t("careers.ch4"),
       chardp1: t("careers.cp4"),
       btn: t("careers.cbtn"),
     },
-  ];
-
-  const careerlinks = [
-    t("careers.ch1"),
-    t("careers.ch2"),
-    t("careers.ch3"),
-    t("careers.ch4"),
   ];
 
   return (
@@ -111,7 +108,7 @@ const Carrer = () => {
                 <div className="flex flex-col items-start space-y-6">
                   <Link
                     to={`/career-advice/${encodeURIComponent(
-                      career.cardh1.toLowerCase().replace(/\s+/g, "-")
+                      career.link.toLowerCase().replace(/\s+/g, "-")
                     )}`}
                     className="text-2xl text-red-500 font-bold tracking-wide"
                   >
@@ -120,7 +117,7 @@ const Carrer = () => {
                   <p className="text-gray-800">{career.chardp1}</p>
                   <Link
                     to={`/career-advice/${encodeURIComponent(
-                      career.cardh1.toLowerCase().replace(/\s+/g, "-")
+                      career.link.toLowerCase().replace(/\s+/g, "-")
                     )}`}
                     className="px-4 py-2 border border-gray-300 hover:bg-red-500 uppercase hover:text-white text-lg font-semibold flex items-center gap-x-3"
                   >
@@ -142,7 +139,7 @@ const Carrer = () => {
                   <li key={index}>
                     <Link
                       to={`/career-advice/${encodeURIComponent(
-                        link.cardh1.toLowerCase().replace(/\s+/g, "-")
+                        link.link.toLowerCase().replace(/\s+/g, "-")
                       )}`}
                       className="flex items-center gap-x-2 text-gray-700 hover:text-red-500 transition-colors p-2 hover:bg-gray-100 rounded"
                     >
