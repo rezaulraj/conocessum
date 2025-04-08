@@ -96,9 +96,6 @@ const About = () => {
           {/* Sidebar Links (right side) */}
           <div className="hidden custom:block w-64 flex-shrink-0">
             <div className="sticky top-4 bg-gray-200 p-4 rounded-lg shadow-sm">
-              <h3 className="text-lg font-bold mb-4 text-gray-800 border-b pb-2">
-                {t("services.service")}
-              </h3>
               <ul className="space-y-3">
                 {abloutlinks.map((link, index) => (
                   <li key={index}>
