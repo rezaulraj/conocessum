@@ -156,7 +156,7 @@ const HomePage = () => {
               <Link
                 key={index}
                 to={card.url}
-                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+                className="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 cursor-pointer"
               >
                 <div className="p-6 flex flex-col items-center justify-between h-[420px]">
                   <img src={card.image} alt="" className="" />

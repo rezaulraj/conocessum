@@ -23,9 +23,9 @@ const Footer = () => {
     { title: t("menu.services"), path: "/services" },
     { title: t("menu.candidates"), path: "/candidates" },
     { title: t("menu.clients"), path: "/clients" },
-    { title: t("menu.career"), path: "/career" },
-    { title: t("menu.about"), path: "/about" },
-    { title: t("menu.faq"), path: "/faq" },
+    { title: t("menu.career"), path: "/career-advice" },
+    { title: t("menu.about"), path: "/about-us" },
+    { title: t("menu.faq"), path: "/faqs" },
     { title: t("menu.contact"), path: "/contact" },
   ];
   return (
@@ -38,7 +38,7 @@ const Footer = () => {
                 <li key={indx} className="flex flex-col ">
                   <div className="flex items-center gap-x-2 group">
                     <span className="w-1.5 h-1.5 bg-gray-600 group-hover:bg-white/80"></span>
-                    <Link className="text-white hover:underline">
+                    <Link to={item.path} className="text-white hover:underline">
                       {item.title}
                     </Link>
                   </div>
@@ -115,7 +115,10 @@ const Footer = () => {
               />
             </div>
             <div className="flex items-center justify-center gap-x-2">
-              <input type="checkbox" className="w-5 h-5 accent-blue-400 cursor-pointer" />
+              <input
+                type="checkbox"
+                className="w-5 h-5 accent-blue-400 cursor-pointer"
+              />
               <p className="text-white/80 font-semibold">
                 {t("footer.condition")}
               </p>
